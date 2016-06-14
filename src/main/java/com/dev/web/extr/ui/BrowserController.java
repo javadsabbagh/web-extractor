@@ -1,8 +1,8 @@
 package com.dev.web.extr.ui;
 
-import java.awt.Button;
-import java.awt.TextField;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
 import javafx.scene.web.WebView;
 
 /**
