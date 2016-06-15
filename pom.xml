@@ -41,11 +41,23 @@
             <version>1.4.192</version>
         </dependency>
 
-        <!-- http://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
-        <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-core</artifactId>
-            <version>5.2.0.Final</version>
-        </dependency>
+        <!--&lt;!&ndash; http://mvnrepository.com/artifact/org.hibernate/hibernate-core &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>org.hibernate</groupId>-->
+            <!--<artifactId>hibernate-core</artifactId>-->
+            <!--<version>5.2.0.Final</version>-->
+        <!--</dependency>-->
+
+        <!--<dependency>-->
+            <!--<groupId>org.hibernate</groupId>-->
+            <!--<artifactId>hibernate-core</artifactId>-->
+            <!--<version>4.3.5.Final</version>-->
+        <!--</dependency>-->
+        <!--&lt;!&ndash; Hibernate 4 uses Jboss logging (jboss-logging), but older versions slf4j for logging &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>org.slf4j</groupId>-->
+            <!--<artifactId>slf4j-simple</artifactId>-->
+            <!--<version>1.7.5</version>-->
+        <!--</dependency>-->
     </dependencies>
 </project>
