@@ -8,15 +8,15 @@ import java.util.Date;
 
 /**
  * @author Pankaj Kumar
- */ 
+ */
 public class HibernateAnnotationConfigMain {
- 
+
     public static void main(String[] args) {
         Employee emp = new Employee();
         emp.setName("David");
         emp.setRole("Developer");
         emp.setInsertTime(new Date());
-         
+
         //Get Session
         SessionFactory sessionFactory = HibernateUtil.getSessionAnnotationFactory();
         Session session = sessionFactory.getCurrentSession();
@@ -27,9 +27,9 @@ public class HibernateAnnotationConfigMain {
         //Commit transaction
         session.getTransaction().commit();
         System.out.println("Employee ID="+emp.getId());
-         
+
         //terminate session factory, otherwise program won't end
         sessionFactory.close();
     }
- 
+
 }
