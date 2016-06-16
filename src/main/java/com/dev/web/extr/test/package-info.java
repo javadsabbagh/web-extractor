@@ -1,4 +1,0 @@
-package com.dev.web.extr.test;
-
-//Demostrates testing gui with TestFX
-// @see http://www.bennet-schulz.com/2015/05/how-to-test-your-javafx-fxml-with-testfx.html

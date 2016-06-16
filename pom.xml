@@ -4,13 +4,26 @@
     <groupId>com.dev</groupId>
     <artifactId>web-extractor</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <modules>
+        <module>model</module>
+        <module>dao</module>
+        <module>business</module>
+        <module>ui</module>
+    </modules>
+    <packaging>pom</packaging>
     <name>Web Page/DB Information Extractor</name>
     
     <contributors>
         <contributor>
             <name>Javad Sabbagh</name>
             <email>j.sabbagh89@gmail.com</email>
+            <roles>
+                <role>Developer</role>
+            </roles>
+        </contributor>
+        <contributor>
+            <name>Mehdi Afsari</name>
+            <email>mahdi.afsari@gmail.com</email>
             <roles>
                 <role>Developer</role>
             </roles>
@@ -47,11 +60,7 @@
         <!--<version>5.2.0.Final</version>-->
         <!--</dependency>-->
 
-        <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-core</artifactId>
-            <version>4.3.5.Final</version>
-        </dependency>
+
         <!-- Hibernate 4 uses Jboss logging (jboss-logging), but older versions slf4j for logging -->
         <!--<dependency>-->
         <!--<groupId>org.slf4j</groupId>-->
@@ -86,11 +95,7 @@
             <artifactId>log4j</artifactId>
             <version>1.2.17</version>
         </dependency>
-        <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-entitymanager</artifactId>
-            <version>4.3.1.Final</version>
-        </dependency>
+
     </dependencies>
     
     <build>
