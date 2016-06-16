@@ -1,5 +1,6 @@
 package com.dev.extr.model;
 
+import javax.inject.Singleton;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
@@ -9,6 +10,7 @@ import java.util.Date;
  * @author Sabbagh
  */ 
 @Entity
+@Singleton
 @Table(name="Employee", uniqueConstraints={@UniqueConstraint(columnNames={"ID"})})
 public class Employee implements Serializable {
  

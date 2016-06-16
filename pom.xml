@@ -36,23 +36,6 @@
     </properties>
     
     <dependencies>
-        <dependency>
-            <groupId>org.jsoup</groupId>
-            <artifactId>jsoup</artifactId>
-            <version>1.9.2</version>
-        </dependency>
-        
-        <dependency>
-            <groupId>org.apache.httpcomponents</groupId>
-            <artifactId>httpclient</artifactId>
-            <version>4.5.2</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.h2database</groupId>
-            <artifactId>h2</artifactId>
-            <version>1.4.192</version>
-        </dependency>
 
         <!--<dependency>-->
         <!--<groupId>org.hibernate</groupId>-->
@@ -67,15 +50,6 @@
         <!--<artifactId>slf4j-simple</artifactId>-->
         <!--<version>1.7.5</version>-->
         <!--</dependency>-->
-        
-        <!-- Use TestFX 3 for automating gui tests. 
-        TODO Consider using testFX 4.0.x whener final release published. -->
-        <dependency>
-            <groupId>org.loadui</groupId>
-            <artifactId>testFx</artifactId>
-            <version>3.1.2</version>
-<!--            <scope>test</scope>-->
-        </dependency>
         
         <!-- Dagger is a compile-time injection (its mvn compiler plugin generate needed factories) and is fast and lightweight which makes it suitable for small and embedded projects.-->
         <dependency>
@@ -96,12 +70,20 @@
             <version>1.2.17</version>
         </dependency>
 
+        <!-- http://mvnrepository.com/artifact/junit/junit -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+        </dependency>
+
+
     </dependencies>
-    
+
     <build>
         <finalName>${project.artifactId}</finalName>
     </build>
-    
+
     <!-- Comment/uncomment this repo when you have/havenot internet connection. It must have exactly the same structure as .m2 or any other repo.-->
 <!--    <repositories>
         <repository>

@@ -11,5 +11,15 @@
 
     <artifactId>desktop</artifactId>
 
+    <dependencies>
+        <!-- Use TestFX 3 for automating gui tests.
+TODO Consider using testFX 4.0.x whener final release published. -->
+        <dependency>
+            <groupId>org.loadui</groupId>
+            <artifactId>testFx</artifactId>
+            <version>3.1.2</version>
+            <!--            <scope>test</scope>-->
+        </dependency>
+    </dependencies>
 
 </project>
