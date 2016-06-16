@@ -65,7 +65,7 @@
             <groupId>org.loadui</groupId>
             <artifactId>testFx</artifactId>
             <version>3.1.2</version>
-            <scope>test</scope>
+<!--            <scope>test</scope>-->
         </dependency>
         
         <!-- Dagger is a compile-time injection (its mvn compiler plugin generate needed factories) and is fast and lightweight which makes it suitable for small and embedded projects.-->
