@@ -5,6 +5,7 @@
     <artifactId>web-extractor</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
+    <name>Web Page/DB Information Extractor</name>
     
     <contributors>
         <contributor>
@@ -34,30 +35,74 @@
             <version>4.5.2</version>
         </dependency>
 
-        <!-- http://mvnrepository.com/artifact/com.h2database/h2 -->
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
             <version>1.4.192</version>
         </dependency>
 
-        <!--&lt;!&ndash; http://mvnrepository.com/artifact/org.hibernate/hibernate-core &ndash;&gt;-->
         <!--<dependency>-->
-            <!--<groupId>org.hibernate</groupId>-->
-            <!--<artifactId>hibernate-core</artifactId>-->
-            <!--<version>5.2.0.Final</version>-->
+        <!--<groupId>org.hibernate</groupId>-->
+        <!--<artifactId>hibernate-core</artifactId>-->
+        <!--<version>5.2.0.Final</version>-->
         <!--</dependency>-->
 
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>4.3.5.Final</version>
+        </dependency>
+        <!-- Hibernate 4 uses Jboss logging (jboss-logging), but older versions slf4j for logging -->
         <!--<dependency>-->
-            <!--<groupId>org.hibernate</groupId>-->
-            <!--<artifactId>hibernate-core</artifactId>-->
-            <!--<version>4.3.5.Final</version>-->
+        <!--<groupId>org.slf4j</groupId>-->
+        <!--<artifactId>slf4j-simple</artifactId>-->
+        <!--<version>1.7.5</version>-->
         <!--</dependency>-->
-        <!--&lt;!&ndash; Hibernate 4 uses Jboss logging (jboss-logging), but older versions slf4j for logging &ndash;&gt;-->
-        <!--<dependency>-->
-            <!--<groupId>org.slf4j</groupId>-->
-            <!--<artifactId>slf4j-simple</artifactId>-->
-            <!--<version>1.7.5</version>-->
-        <!--</dependency>-->
+        
+        <!-- Use TestFX 3 for automating gui tests. 
+        TODO Consider using testFX 4.0.x whener final release published. -->
+        <dependency>
+            <groupId>org.loadui</groupId>
+            <artifactId>testFx</artifactId>
+            <version>3.1.2</version>
+            <scope>test</scope>
+        </dependency>
+        
+        <!-- Dagger is a compile-time injection (its mvn compiler plugin generate needed factories) and is fast and lightweight which makes it suitable for small and embedded projects.-->
+        <dependency>
+            <groupId>com.gluonhq</groupId>
+            <artifactId>ignite-dagger</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>com.gluonhq</groupId>
+            <artifactId>ignite-guice</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.17</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-entitymanager</artifactId>
+            <version>4.3.1.Final</version>
+        </dependency>
     </dependencies>
+    
+    <build>
+        <finalName>${project.artifactId}</finalName>
+    </build>
+    
+    <!-- Comment/uncomment this repo when you have/havenot internet connection. It must have exactly the same structure as .m2 or any other repo.-->
+<!--    <repositories>
+        <repository>
+            <id>offline-jars-repo</id>
+            <name>A temporary repository created by NetBeans for libraries and jars it could not identify. Please replace the dependencies in this repository with correct ones and delete this repository.</name>
+            <url>file:${project.basedir}/lib</url>
+        </repository>
+    </repositories>-->
 </project>
