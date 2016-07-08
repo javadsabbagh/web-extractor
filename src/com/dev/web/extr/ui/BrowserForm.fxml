@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="587.0" prefWidth="636.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dev.web.extr.ui.BrowserController">
+   <children>
+      <WebView fx:id="browser" layoutX="7.0" layoutY="130.0" prefHeight="439.0" prefWidth="608.0" />
+      <TextField fx:id="urlField" layoutX="7.0" layoutY="81.0" prefHeight="25.0" prefWidth="508.0" />
+      <Button fx:id="goButton" layoutX="522.0" layoutY="81.0" mnemonicParsing="false" onAction="#onGoAction" text="Go" />
+      <Button fx:id="aboutButton" layoutX="565.0" layoutY="81.0" mnemonicParsing="false" onAction="#onAboutAction" text="About" />
+   </children>
+</Pane>
